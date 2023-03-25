@@ -1,3 +1,4 @@
+// Given a prompt, call the Stable Diffusion API to generate an image.
 export async function createImageFromPrompt(prompt) {
     const image = await query({"inputs": prompt});
     return image;
