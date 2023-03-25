@@ -1,4 +1,13 @@
-import {createImageFromPrompt} from '../paintingPictures/imageGenerator.js';
+/*
+      /\
+     /  \
+____/    \____
+\            /
+ \/        \/
+ /          \
+/    /\/\    \
+
+*/
 // whatever the higher level flow ctrl is should call createImageFromPrompt function
 // and then pass the result image into this module's function onClick 'Confirm' or 'Change Playlist Image' button.
 
