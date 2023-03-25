@@ -10,11 +10,9 @@ ____/    \____
 */
 
 
-const access_token; // get the access token here from app.js
-
 // use: https://developer.spotify.com/documentation/web-api/reference/#/operations/get-a-list-of-current-users-playlists
 // Retrieve all playlists (list of names+playlist_id)
-export async function get_All_Playlist_Names_and_IDs() {
+export async function get_All_Playlist_Names_and_IDs(access_token) {
     fetch('https://api.spotify.com/v1/me/playlists', {
         headers: {
             'Authorization' : 'Bearer ' + access_token
@@ -39,7 +37,7 @@ export async function get_All_Playlist_Names_and_IDs() {
 
 
 // Retrieve playlist items from spotify using a specified id
-export function getPlaylistItems(playlist_id) {
+export function getPlaylistItems(access_token, playlist_id) {
     fetch(`https://api.spotify.com/v1/playlists/${playlist_id}/tracks` {
         headers: {
             'Authorization' : 'Bearer ' + access_token

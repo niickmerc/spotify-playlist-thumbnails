@@ -2,5 +2,8 @@
   "name": "web-api-examples",
   "lockfileVersion": 2,
   "requires": true,
-  "packages": {}
+  "packages": {},
+  "dependencies": {
+    "openai": "^3.2.1"
+  }
 }
