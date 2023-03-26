@@ -38,7 +38,7 @@ export async function get_All_Playlist_Names_and_IDs(access_token) {
 
 // Retrieve playlist items from spotify using a specified id
 export function getPlaylistItems(access_token, playlist_id) {
-    fetch(`https://api.spotify.com/v1/playlists/${playlist_id}/tracks` {
+    fetch(`https://api.spotify.com/v1/playlists/${playlist_id}/tracks`, {
         headers: {
             'Authorization' : 'Bearer ' + access_token
         }
